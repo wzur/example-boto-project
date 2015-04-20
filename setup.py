@@ -3,16 +3,17 @@
 from distutils.core import setup
 
 setup(name='Example-Boto-Project',
-      version='1.0',
+      version='0.1',
       description='An example project which uses Boto',
       long_description='An example project which uses Boto',
       author='Waldemar Zurowski',
+      author_email='wzurowski@gmail.com',
       license='GPL3',
       url='https://github.com/wzur/example-boto-project',
-      packages=['example-boto'],
-      package_dir={'': 'src'},
-      scripts=['src/ExampleBoto.py'],
-      requires=['requests', 'json', 'argparse', 'boto'],
+      package_dir={'exampleboto': 'lib/exampleboto'},
+      packages=['exampleboto'],
+      scripts=['scripts/ExampleBoto.py'],
+      requires=['json', 'argparse', 'boto'],
       platforms=['unix'],
       )
 
