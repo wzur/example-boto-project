@@ -13,7 +13,7 @@ setup(name='Example-Boto-Project',
       package_dir={'exampleboto': 'lib/exampleboto'},
       packages=['exampleboto'],
       scripts=['scripts/ExampleBoto.py'],
-      requires=['json', 'argparse', 'boto'],
+      requires=['json', 'argparse', 'botocore'],
       platforms=['unix'],
       )
 
